@@ -6,7 +6,6 @@ use FOS\RestBundle\Controller\AbstractFOSRestController;
 use Symfony\Component\HttpFoundation\Response;
 use FOS\RestBundle\View\View;
 use FOS\RestBundle\Controller\Annotations as Rest;
-use App\Service\BusStop\BusStopInterface;
 
 use App\Service\BusRoute\BusRouteService;
 
