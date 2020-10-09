@@ -1,7 +1,11 @@
 jms_serializer:
-    visitors:
-        xml_serialization:
-            format_output: '%kernel.debug%'
+  visitors:
+    json_serialization:
+      options:
+        - JSON_PRETTY_PRINT
+        - JSON_UNESCAPED_SLASHES
+#        xml_serialization:
+#            format_output: '%kernel.debug%'
 #    metadata:
 #        auto_detection: false
 #        directories:
