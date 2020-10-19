@@ -54,7 +54,7 @@ jobs:
         id: build-image-nginx
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: 650706818394.dkr.ecr.eu-west-2.amazonaws.com/routez-nginx
+          ECR_REPOSITORY: routez-nginx
           IMAGE_TAG: ${{ github.sha }}
         run: |
           # Build a docker container and
@@ -68,7 +68,7 @@ jobs:
         id: build-image-routez
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: 650706818394.dkr.ecr.eu-west-2.amazonaws.com/routez-api-service
+          ECR_REPOSITORY: routez-api-service
           IMAGE_TAG: ${{ github.sha }}
         run: |
           # Build a docker container and
