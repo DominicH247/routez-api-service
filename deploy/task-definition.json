@@ -43,7 +43,7 @@
             "memoryReservation": null,
             "volumesFrom": [],
             "stopTimeout": null,
-            "image": "650706818394.dkr.ecr.eu-west-2.amazonaws.com/routez-nginx",
+            "image": "650706818394.dkr.ecr.eu-west-2.amazonaws.com/routez-nginx:latest",
             "startTimeout": null,
             "firelensConfiguration": null,
             "dependsOn": [
@@ -110,7 +110,7 @@
             "memoryReservation": null,
             "volumesFrom": [],
             "stopTimeout": null,
-            "image": "650706818394.dkr.ecr.eu-west-2.amazonaws.com/routez-api-service",
+            "image": "650706818394.dkr.ecr.eu-west-2.amazonaws.com/routez-api-service:latest",
             "startTimeout": null,
             "firelensConfiguration": null,
             "dependsOn": null,
