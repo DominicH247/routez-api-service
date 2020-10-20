@@ -9,7 +9,11 @@ RUN apt-get update && apt-get install -y libpq-dev zlib1g-dev g++ git libicu-dev
 
 WORKDIR /var/www/project
 
+<<<<<<< HEAD
 COPY routez-api-service/app .
+=======
+COPY /app .
+>>>>>>> fe1f80dc5e8026f37ec3fa956bc83a2b4882e520
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
