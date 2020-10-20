@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y libpq-dev zlib1g-dev g++ git libicu-dev
 
 WORKDIR /var/www/project
 
-COPY ~/app .
+COPY /app .
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
