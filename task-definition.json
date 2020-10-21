@@ -49,7 +49,7 @@
             "dependsOn": [
                 {
                     "containerName": "routez-api-service-container",
-                    "condition": "COMPLETE"
+                    "condition": "START"
                 }
             ],
             "disableNetworking": null,
