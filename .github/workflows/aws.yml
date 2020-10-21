@@ -98,6 +98,6 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: task-definition.json
-          service: routez-api-service
-          cluster: routez-ecscluster
+          service: nginx-routez-service
+          cluster: routezCluster
           wait-for-service-stability: true
