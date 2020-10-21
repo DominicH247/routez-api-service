@@ -87,9 +87,6 @@
                     "containerPort": 9000
                 }
             ],
-            "command": [
-                "composer install"
-            ],
             "linuxParameters": null,
             "cpu": 0,
             "environment": [],
