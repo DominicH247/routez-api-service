@@ -11,7 +11,7 @@
                 "options": {
                     "awslogs-group": "/ecs/nginx-routez-task-definition",
                     "awslogs-region": "eu-west-2",
-                    "awslogs-stream-prefix": "routez-api"
+                    "awslogs-stream-prefix": "routez-php-fpm"
                 }
             },
             "entryPoint": null,
@@ -59,7 +59,7 @@
             "dockerLabels": null,
             "systemControls": null,
             "privileged": null,
-            "name": "routez-api-service-container"
+            "name": "php-fpm"
         },
         {
             "dnsSearchDomains": null,
@@ -107,7 +107,7 @@
             "firelensConfiguration": null,
             "dependsOn": [
                 {
-                    "containerName": "routez-api-service-container",
+                    "containerName": "php-fpm",
                     "condition": "START"
                 }
             ],
@@ -124,7 +124,7 @@
             "dockerLabels": null,
             "systemControls": null,
             "privileged": null,
-            "name": "nginx-container"
+            "name": "nginx"
         }
     ],
     "placementConstraints": [],
