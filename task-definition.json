@@ -115,7 +115,9 @@
             "interactive": null,
             "healthCheck": null,
             "essential": false,
-            "links": null,
+            "links": [
+                "php-fpm:php-fpm"
+            ],
             "hostname": null,
             "extraHosts": null,
             "pseudoTerminal": null,
