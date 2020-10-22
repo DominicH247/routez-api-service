@@ -6,7 +6,7 @@ networks:
 services:
   nginx-service:
     image: nginx:stable-alpine
-    container_name: nginx-container
+    container_name: nginx
     ports:
       - "8080:80"
     volumes:
@@ -21,7 +21,7 @@ services:
     build:
       context: .
       dockerfile: ./php/Dockerfile
-    container_name: php74-container
+    container_name: php-fpm
     ports:
       - "9000:9000"
     volumes:
